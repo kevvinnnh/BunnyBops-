@@ -1,23 +1,88 @@
-body { 
-    background-color: black ; 
-}
+* {box-sizing: border-box}
+        body {font-family: Arial, Helvetica, sans-serif;
+            background-color: black ; }
+        
+        .navbar {
+          width: 100%;
+          background-color: black ;
+          
+          overflow: hidden;
+     
+      position: fixed; 
+      bottom: 0;
+      width: 100%;
+        }
+        
+        .navbar a {
+            left: 500px; 
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+          width: 33.333333333333333333333333333333333333333333333333333333333333333333333333%; 
+          text-align: center;
+        }
+        
+        .navbar a:hover {
+          background-color: rgb(255, 93, 93);
+        }
+        
+        .navbar a.active {
+          background-color: #dc170c ;
+        }
+        
+        .albums{ 
+            display: flex; 
+            flex-direction: column; 
+            flex-wrap: wrap; 
+            align-items: center; 
+            margin-left: 10px; 
+            margin-top: 100px; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-row-gap: 9em; 
+            grid-column-gap:8em; 
+            flex: absolute; 
+            border: 1000px; 
+            position: center; 
+            justify-content: center;
+            flex-direction: column; }
+        
+        @media screen and (max-width: 500px) {
+          .navbar a {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+        }
+
 
 .logo{ 
-    margin-top: -30px; 
-  
+    
+    position: fixed; 
+    top: -25px; 
+    left: -5px; 
 }
 
 .hello{ 
+    font: "circular std book";
     color: white; 
-    margin-top: -100px; 
-    margin-left: 115px; 
+    position: fixed; 
+    top: -25px; 
+    left: 95px; 
+
     font-size: 30px; 
 }
 
 .flame { 
-    margin-left: 220px; 
-    position: absolute; 
-    margin-top: -106px; 
+
+    color: white; 
+    position: fixed; 
+    top: -35px; 
+    left: 200px; 
+
     
 }
 .albums{ 
@@ -36,12 +101,7 @@ body {
     font-family: "circular std book", sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #222;
-    font-size: 14px;
-}
+
 
 .music-player {
     --primary-color: #ddd;
@@ -52,8 +112,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
+    position: relative; 
     height: 7rem;
     padding: var(--padding);
     color: var(--primary-color);
@@ -112,6 +171,7 @@ i:hover{
 .icons{
     display: flex;
     gap: 1em;
+    
 }
 .progress-controller{
     width: 100%;
@@ -189,4 +249,7 @@ i:hover{
 }
 .volume-bar .progress-bar:hover .progress::after{
     --size: .8em;
+}
+.fa-heart{
+
 }
