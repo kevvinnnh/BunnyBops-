@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
-</head>
-  <style>
-    
-    
-    .navbar {
-      overflow: hidden;
-      background-color: #333;
+    <head> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+        <style>
+        * {box-sizing: border-box}
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        .navbar {
+          width: 100%;
+          background-color: black ;
+          
+          overflow: hidden;
+     
       position: fixed; 
       bottom: 0;
       width: 100%;
-      margin-left : 1000; 
-    }
+        }
+        
+        .navbar a {
+            left: 500px; 
+          float: left;
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+          width: 33.333333333333333333333333333333333333333333333333333333333333333333333333%; 
+          text-align: center;
+        }
+        
+        .navbar a:hover {
+          background-color: rgb(255, 93, 93);
+        }
+        
+        .navbar a.active {
+          background-color: #dc170c ;
+        }
+        
+        @media screen and (max-width: 500px) {
+          .navbar a {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+          }
+        }
+        </style>
+        <body>
+            
+            <img class= "logo" src="https://www.linkpicture.com/q/bad_bunny-removebg-preview.png"width="100" 
+            height="130" top= "100" type="image" ></a>
+            <p class= "hello"> Welcome </p>
+            <img class= "flame" src= " https://media1.giphy.com/media/RgmeDVcH9QC6togDHy/giphy.gif" width= "80" height = "80"></a>
     
-    .navbar a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .navbar a:hover {
-      background: #f1f1f1;
-      color: black;
-    }
-    
-    .navbar a.active {
-      background-color: #dc170c;
-      color: white;
-    }
-    
-    .main {
-      padding: 16px;
-      margin-bottom: 30px;
-    }
-    </style>
-    </head>
-    <body>
-        <img class= "logo" src="https://www.linkpicture.com/q/bad_bunny-removebg-preview.png"width="100" 
-        height="130" top= "100" type="image" ></a>
-        <p class= "hello"> Hello ❤️‍🔥 </p>
-    
-    
-    
-    <div class="navbar">
-      <a href="#home" class="active"><img src= "https://www.freeiconspng.com/uploads/home-icon-png-31.png" width= "42" height="50"> </a></a>
-      <a href="#news"><img src= "https://www.nicepng.com/png/full/202-2024580_png-file-profile-icon-vector-png.png" width= "45" height="45" > </a></a>
-      <a href="#contact"><img src= "  https://cdn-icons-png.flaticon.com/512/761/761755.png" width= "45" height="45" > </a></a>
-    </div>
-  
-   
+ 
+        
+        <div class="navbar">
+          <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+          <a href="#"><i class="fa fa-fw fa-user"></i> Social</a>
+          
+          <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+          
+        </div>
 
-    
   <script src="./bunny.js"></script>
-    </body>
+</body>
 </html>
+
+
+
+
+
