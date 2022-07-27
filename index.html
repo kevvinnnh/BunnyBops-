@@ -41,6 +41,23 @@
           background-color: #dc170c ;
         }
         
+        .albums{ 
+            display: flex; 
+            flex-direction: column; 
+            flex-wrap: wrap; 
+            align-items: center; 
+            margin-left: 10px; 
+            margin-top: 100px; 
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-row-gap: 9em; 
+            grid-column-gap:8em; 
+            flex: absolute; 
+            border: 1000px; 
+            position: center; 
+            justify-content: center;
+            flex-direction: column; }
+        
         @media screen and (max-width: 500px) {
           .navbar a {
             float: none;
@@ -56,13 +73,14 @@
             height="130" top= "100" type="image" ></a>
             <p class= "hello"> Welcome </p>
             <img class= "flame" src= " https://media1.giphy.com/media/RgmeDVcH9QC6togDHy/giphy.gif" width= "80" height = "80"></a>
-    
+<div class ="albums">
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=aORAu5LWBLzSjlsoavFH0t_M69_UI9rrJSVvWL2-yAg=&f=4></a>
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=aD8afpQUq7BblvyuaMWlzFWnbEN5fCjifro6xhIBuB4=&f=4></a>
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=zdXnWis4ss-1w4PeKpUXFipQg_7iAU1wjqLgK_xGXts=&f=4></a>
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=QEYv8aUF4To0_vDtEr_0w4Af7E_1E-2MlBBPmPAXRBU=&f=4></a>
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=TWAoq_5LGTRNFMjTSFMTcZhUoDg0hsvx4F4sL4oO-nA=&f=4></a>
  <img src= https://rovimusic.rovicorp.com/image.jpg?c=3VtPul2WBSumL1W2QS6SjQ4Q1ghY8VaPylnm7PwcKNY=&f=4></a>
+</div>
  <div class="navbar">
           <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
           <a href="#"><i class="fa fa-fw fa-user"></i> Social</a>

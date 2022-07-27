@@ -20,3 +20,11 @@ body {
     margin-top: -106px; 
     
 }
+.albums{ 
+    flex: absolute; 
+    border: 1000px; 
+    position: center; 
+    justify-content: center;
+    flex-direction: column; 
+
+}
