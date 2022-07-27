@@ -385,8 +385,8 @@ label.fcf-label {
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #fc2014;
+    border-color: white;
 }
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
