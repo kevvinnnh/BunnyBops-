@@ -418,28 +418,31 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 
-.box1, .box2{
-
-
-  transition:0.99s;
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12{
+  transition:0.5s;
 }
-.box2 {
+.box2, .box4, .box6, .box8, .box10, .box12{
   opacity: 0;
   position: absolute;
   width: 400px; 
-    height: 400ps; 
+height: 500px; 
+    top: 0px;
    
+
+
+
 }
-.box-wrap:hover .box2{
+.box-wrap1:hover .box2, .box-wrap2:hover .box4, .box-wrap3:hover .box6, .box-wrap4:hover .box8, .box-wrap5:hover .box10, .box-wrap6:hover .box12{
   opacity:1;
   transform:translateY(0px);  
 }
-.box-wrap:hover .box1{
+.box-wrap1:hover .box1, .box-wrap2:hover .box3, .box-wrap3:hover .box5, .box-wrap4:hover .box7, .box-wrap5:hover .box9, .box-wrap6:hover .box11{
   opacity:0;
-  height:0; 
+
 }
-.box-wrap{
+.box-wrap1,  .box-wrap2,  .box-wrap3,  .box-wrap4,  .box-wrap5,  .box-wrap6{
   position:relative;
   display:inline-block;
   
 }
+ 
