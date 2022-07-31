@@ -1,6 +1,7 @@
 * {box-sizing: border-box}
         body {font-family: Arial, Helvetica, sans-serif;
-            background-color: black ; }
+            background-color: black ; 
+        width: 80%; }
         
         .navbar {
           width: 100%;
@@ -33,11 +34,12 @@
         }
         
         #albums{ 
+            
             display: flex; 
             flex-direction: column; 
             flex-wrap: wrap; 
             align-items: center; 
-            margin-left: 10px; 
+            margin-left: 30px; 
             margin-top: 100px; 
             display: grid;
             grid-template-columns: repeat(3, 1fr); 
@@ -46,7 +48,7 @@
             flex: absolute; 
             border: 1000px; 
             position: center; 
-            justify-content: center;
+            
             flex-direction: column; }
           
         
@@ -74,8 +76,66 @@
     top: -25px; 
     left: 95px; 
 
-    font-size: 30px; 
+
+    font-size: 30px; }
+    #head {
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        
+        display: grid; 
+        flex: absolute; 
+    }
+.banner{ 
+   
+
+    width: 40px;
+    position: relative; 
+    left: 54.3%; 
+
 }
+.updates{ 
+    size:300px; 
+    color: white; 
+    position: relative ; 
+    top: -170px; 
+}
+.line1{
+border: solid 1px #dc170c;
+position: relative; 
+top: 8px; 
+width: 124.3%; 
+}
+.line2{ 
+    border: solid 1px #dc170c; 
+    position: relative; 
+    top: -10px; 
+    width: 124.3%; 
+}
+
+.monthly{ 
+    font: "circular std book";
+    color: white; 
+    position: relative ; 
+    top: 30px; 
+    left: 95px; 
+
+    font-size:20 px; 
+}
+.item {
+    width: 100%
+  }
+  
+
+
+.banner{ 
+
+    width: 40%;
+    margin-left: 30%; 
+    
+}
+
+
 
 .flame { 
 
@@ -427,10 +487,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   width: 400px; 
 height: 500px; 
     top: 0px;
-   
-
-
-
 }
 .box-wrap1:hover .box2, .box-wrap2:hover .box4, .box-wrap3:hover .box6, .box-wrap4:hover .box8, .box-wrap5:hover .box10, .box-wrap6:hover .box12{
   opacity:1;
