@@ -64,6 +64,7 @@
 
 .logo{ 
     
+    z-index: 1;
     position: fixed; 
     top: -25px; 
     left: -5px; 
@@ -72,7 +73,7 @@
 .hello{ 
     font: "circular std book";
     color: white; 
-    position: fixed; 
+    position: absolute; 
     top: -25px; 
     left: 95px; 
 
@@ -101,13 +102,15 @@
     top: -170px; 
 }
 .line1{
-border: solid 1px #dc170c;
+border: solid 3px #dc170c;
+background-color: #dc170c;
 position: relative; 
 top: 8px; 
 width: 124.3%; 
 }
 .line2{ 
-    border: solid 1px #dc170c; 
+    border: solid 3px #dc170c; 
+    background-color: #dc170c;
     position: relative; 
     top: -10px; 
     width: 124.3%; 
@@ -140,7 +143,7 @@ width: 124.3%;
 .flame { 
 
     color: white; 
-    position: fixed; 
+    position: absolute; 
     top: -35px; 
     left: 200px; 
 
@@ -318,9 +321,11 @@ i:hover{
     display:block;
 }
 
-.fcf-body {
+#fcf-body {
+    width:99000%; 
     position: relative; 
-    top:150px; 
+    left: 150px; 
+    top:100px; 
     margin: 0;
     font-family: -apple-system, Arial, sans-serif;
     font-size: 1rem;
@@ -501,4 +506,63 @@ height: 500px;
   display:inline-block;
   
 }
- 
+@media screen and (max-width: 500px) {
+    
+#fcf-body {
+    
+    position: relative; 
+    left: 25px; 
+    width: 150%; 
+    top:100px; 
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    background-color: black;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    max-width: 100%;
+
+}
+body {font-family: Arial, Helvetica, sans-serif;
+    background-color: black ; 
+width: 73%; }
+.monthly{ font-size: 13px; }
+.updates{ font-size: 13px; top: -120px; }
+.line1{left:-8px; width: 137%;}
+.line2{ left: -8px; top: 50px; width: 137%;}
+.banner{height: 162%; width: 110%;  left:-17px; top: 1px; }
+
+#albums{ 
+    width: 20%;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    margin-left: -30px; 
+    margin-top: 85px; 
+    display: grid;
+    grid-template-columns: repeat(1, 2fr); 
+    grid-row-gap: 6em; 
+    flex-shrink: 1; 
+
+    flex: absolute; 
+    
+    position: center; 
+    
+    flex-direction: row; }
+.box-wrap1{ width: 1%; }
+.logo{ 
+    z-index:1; 
+    
+}
+
+.flame, .hello{ 
+    position: absolute; 
+}
+.navbar{ left: -8px; }}
