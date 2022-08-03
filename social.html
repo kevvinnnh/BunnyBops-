@@ -225,77 +225,33 @@
 
   <form class="comment-form">
 
-      <h1 class="commentsHeading">Leave a comment.</h1>
-      <div class="commentInputDiv">
-          <div class="input-top">
-              <input class="commentInput" required type="text" id="commentName" placeholder="Name">
-              <input class="commentInput" required type="email" id="commentEmail" placeholder="Email">
-          </div>
-          <textarea class="commentTextarea" required placeholder="Your Comment" id="commentArea" cols="30" rows="10"></textarea>
-         <div class="commentInputDiv">
-        <input required type="checkbox" id="checkbox" name="input" />
-        <p>I agree to have my comment posted</p>
+    <h1 class="commentsHeading">Leave a comment.</h1>
+
+    <div class="commentInputDiv">
+      <div class="input-top">
+        <input class="commentInput" required type="text" id="commentName" placeholder="Name">
+        <input class="commentInput" required type="email" id="commentEmail" placeholder="Email">
       </div>
-          <button class="commentButton" id="button" type="submit" onclick="myFunction();">Submit</button>
+    </div>
+    <textarea class="commentTextarea" required placeholder="Your Comment" id="commentArea" cols="30"
+      rows="10"></textarea>
+    <div class="commentInputDiv">
+      <input required type="checkbox" id="checkbox" name="input" />
+      <p>I agree to have my comment posted</p>
+    </div>
+    <button class="commentButton" id="button" type="submit" onclick="myFunction();">Submit</button>
+    <ul id="comment-list">
+        <!-- data that comes from local storage -->
+      </ul>
+      </div>
   </form>
-  <ul id="comment-list">
-  <!-- data that comes from local storage -->
-  </ul>
-  </div>
+  
 
 
 
 
 
   <div class="navbar">
-
-    <!-- MEDIA PLAYER HERE  -->
-    <div class="music-player">
-      <div class="song-bar">
-        <div class="song-infos">
-          <div class="image-container">
-            <img src="https://rovimusic.rovicorp.com/image.jpg?c=aORAu5LWBLzSjlsoavFH0t_M69_UI9rrJSVvWL2-yAg=&f=4"
-              alt="" />
-          </div>
-          <div class="song-description">
-            <p class="title">
-              SONG TITLE
-            </p>
-            <p class="artist">ARTIST</p>
-          </div>
-        </div>
-        <div class="icons">
-          <i class="far fa-heart"></i>
-
-        </div>
-      </div>
-      <div class="progress-controller">
-        <div class="control-buttons">
-
-          <i class="fas fa-step-backward"></i>
-          <i class="play-pause fas fa-play"></i>
-          <i class="fas fa-step-forward"></i>
-
-        </div>
-        <div class="progress-container">
-          <span>0:49</span>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-          <span>3:15</span>
-        </div>
-      </div>
-      <div class="other-features">
-
-
-        <div class="volume-bar">
-          <i class="fas fa-volume-down"></i>
-          <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- NAVBAR HERE -->
     <a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a>
     <a class="active" href="./social.html"><i class="fa fa-fw fa-user"></i> Social</a>
@@ -306,6 +262,20 @@
 
 
   <script src="./bunny.js"></script>
+</body>
+
+</html>
+</div> -->
+<!-- NAVBAR HERE -->
+<a href="./index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+<a class="active" href="./social.html"><i class="fa fa-fw fa-user"></i> Social</a>
+
+<a href="./contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+</div>
+
+
+<script src="./bunny.js"></script>
 </body>
 
 </html>
